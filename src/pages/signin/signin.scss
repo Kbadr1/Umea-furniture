@@ -1,0 +1,46 @@
+.SignIn {
+  .page-name {
+    background-color: #e7e1d8;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin-bottom: 100px;
+    .page-links {
+      float: right;
+    }
+  }
+
+  .content {
+    padding: 0;
+    border: 1px solid rgb(189, 189, 189);
+    .login-error {
+      background-color: rgb(255, 173, 173);
+      text-align: center;
+      padding: 10px 0px;
+      margin: 0px 0px 25px 0px;
+      color: rgb(134, 0, 0);
+      border-radius: 5px;
+    }
+    form {
+      padding: 40px 20px 40px 20px;
+    }
+    input {
+      border: 1px solid rgb(189, 189, 189);
+      border-radius: 0;
+      color: black;
+      &:focus {
+        box-shadow: none;
+      }
+    }
+    button {
+      background-color: black;
+      color: white;
+      border: 1px solid black;
+      border-radius: 0;
+      width: 50%;
+      font-weight: 500;
+      &:focus {
+        box-shadow: none;
+      }
+    }
+  }
+}

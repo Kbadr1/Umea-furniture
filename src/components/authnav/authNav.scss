@@ -1,0 +1,21 @@
+.AuthNav {
+  margin-bottom: 20px;
+  text-align: center;
+  .nav-item {
+    background-color: #d2d8d8;
+    .nav-link {
+      border-radius: 0;
+      border: 0;
+    }
+    .active {
+      color: black;
+    }
+  }
+  li {
+    width: 50%;
+    font-weight: 500;
+  }
+  a {
+    color: rgb(66, 66, 66);
+  }
+}

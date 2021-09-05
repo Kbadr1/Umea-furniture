@@ -1,0 +1,35 @@
+.Contact {
+  padding-top: 100px;
+  textarea {
+    width: 100%;
+    border: 1px solid black;
+  }
+  input {
+    color: black;
+    padding-left: 0;
+    border: 0;
+    border-radius: 0;
+    border-bottom: 1px solid black;
+    &::placeholder {
+      color: black;
+    }
+    &:focus {
+      box-shadow: none;
+      border-bottom: 1px solid black;
+    }
+  }
+  button {
+    background-color: white;
+    border: 1px solid black;
+    font-weight: 500;
+    width: 150px;
+    height: 40px;
+  }
+  p {
+    font-weight: 300;
+  }
+  a {
+    line-height: 30px;
+    font-size: 15px;
+  }
+}

@@ -1,0 +1,99 @@
+.Cart {
+  color: black;
+  margin-bottom: 150px;
+  .page-name {
+    background-color: #e7e1d8;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-bottom: 150px;
+
+    p {
+      float: right;
+      font-weight: 300;
+    }
+    a {
+      text-decoration: none;
+      color: black;
+    }
+  }
+
+  .cart-products {
+    border: 1px solid gray;
+    padding: 0px 50px;
+    .titles {
+      padding: 20px 0px;
+      text-transform: uppercase;
+      font-weight: 500;
+      font-size: 14px;
+    }
+    .cart-product {
+      border-top: 1px solid gray;
+      font-size: 18px;
+      font-weight: 500;
+      .name {
+        font-weight: 700;
+      }
+      img {
+        width: 100%;
+        padding: 30px;
+      }
+
+      input {
+        width: 20%;
+        text-align: center;
+        font-weight: 500;
+        color: black;
+        font-size: 17px;
+        background-color: white;
+        border: 0;
+      }
+      .quantity-button {
+        background-color: white;
+        border: 0;
+        i {
+          color: black;
+          font-size: 17px;
+        }
+      }
+      .remove-item {
+        float: right;
+        background-color: white;
+        border: 0;
+        color: rgb(236, 120, 120);
+        font-size: 20px;
+      }
+    }
+  }
+
+  .empty-cart {
+    button {
+      font-weight: 500;
+      color: black;
+      border-radius: 0;
+      border: 1px solid black;
+      margin-top: 20px;
+    }
+  }
+
+  .checkout {
+    margin-top: 30px;
+    padding: 20px;
+    p {
+      font-weight: 500;
+      display: inline;
+    }
+    button {
+      float: right;
+      border: 1px solid black;
+      color: white;
+      background-color: black;
+      padding: 5px 10px;
+      box-shadow: none;
+      transition: ease 0.3s;
+      &:hover {
+        background-color: white;
+        color: black;
+      }
+    }
+  }
+}

@@ -1,0 +1,32 @@
+@import "../../styles/variables.scss";
+
+.About {
+  img {
+    width: 100%;
+  }
+  .header-image {
+    height: 70vh;
+    overflow: hidden;
+    margin-bottom: 100px;
+  }
+  .video {
+    height: 70vh;
+    overflow: hidden;
+  }
+  hr {
+    opacity: 1;
+    width: 30%;
+  }
+  .p-title {
+    padding-top: 30px;
+  }
+}
+
+@media screen and (min-width: 0px) and (max-width: $breakpoint-md) {
+  .About {
+    .header-image,
+    .video {
+      height: auto;
+    }
+  }
+}

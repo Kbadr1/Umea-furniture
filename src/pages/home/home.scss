@@ -1,0 +1,246 @@
+@import "../../styles/variables.scss";
+
+.Home {
+  // carousel
+  .carousel {
+    .carousel-indicators [data-bs-target] {
+      height: 15px;
+      width: 15px;
+      border-radius: 50%;
+    }
+    .carousel-control-next,
+    .carousel-control-prev {
+      width: 10%;
+    }
+    .carousel-caption {
+      text-align: left;
+      left: 10%;
+      width: 50%;
+      line-height: 30px;
+      top: 50%;
+      transform: translateY(-50%);
+      p {
+        font-weight: 300;
+        font-size: 1.3rem;
+      }
+      h1 {
+        font-size: 3rem;
+        padding-bottom: 10px;
+      }
+    }
+    .view-more {
+      all: unset;
+      text-decoration: none;
+      border: 1px solid white;
+      color: white;
+      padding: 5px 10px;
+      border-radius: 3px;
+      font-weight: 500;
+    }
+  }
+  // three offers
+  .offer {
+    position: relative;
+    overflow: hidden;
+    &:hover {
+      img {
+        transform: scale(1.05);
+        transition: 0.4s ease-in-out;
+      }
+    }
+    img {
+      width: 100%;
+      // height: 14rem;
+    }
+    .offer-decsription {
+      p {
+        text-transform: uppercase;
+        font-weight: 300;
+        font-size: 0.8rem;
+      }
+      hr {
+        opacity: 1;
+        width: 75%;
+      }
+      position: absolute;
+      top: 0;
+      color: white;
+      padding: 20px;
+    }
+  }
+  //browse
+  .browse {
+    margin-bottom: 150px;
+    color: black;
+    padding-top: 100px;
+    p {
+      text-transform: uppercase;
+      font-weight: 300;
+      font-size: 12px;
+      letter-spacing: 1px;
+      margin-bottom: 0;
+    }
+    h2 {
+      text-align: center;
+    }
+    hr {
+      opacity: 1;
+      width: 10%;
+      margin-bottom: 50px;
+    }
+
+    .product {
+      position: relative;
+      img {
+        width: 100%;
+      }
+      .product-buttons {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+      }
+    }
+  }
+
+  // team
+  .team {
+    background: linear-gradient(to bottom, #e7e1d8 70%, white 30%);
+    color: black;
+    padding-top: 100px;
+    p {
+      font-weight: 300;
+      text-transform: uppercase;
+      margin-bottom: 0;
+      font-size: 12px;
+      letter-spacing: 1px;
+    }
+
+    hr {
+      opacity: 1;
+      width: 10%;
+      margin-bottom: 50px;
+    }
+
+    img {
+      width: 100%;
+    }
+
+    .team-image {
+      overflow: hidden;
+      &:hover {
+        img {
+          transform: scale(1.04);
+          transition: 0.4s ease-in-out;
+        }
+      }
+    }
+
+    h4 {
+      padding-top: 10px;
+    }
+  }
+  // features
+  .features {
+    color: black;
+    border: 1px solid black;
+    padding: 50px;
+    margin-top: 100px;
+    img {
+      width: 100%;
+    }
+    h4,
+    h6 {
+      font-weight: 700;
+    }
+    p {
+      font-weight: 300;
+    }
+    .input-group {
+      border-bottom: 1px solid black;
+      input {
+        border: 0;
+        font-weight: 300;
+        color: black;
+        padding-left: 1px;
+        &:focus {
+          box-shadow: none;
+        }
+      }
+      span {
+        cursor: pointer;
+        background-color: white;
+        border: 0;
+      }
+      i {
+        color: black;
+        font-size: 19px;
+      }
+    }
+  }
+}
+
+// Medium screens
+
+@media screen and (min-width: $breakpoint-md) and (max-width: $breakpoint-lg) {
+  .Home {
+    //carousel
+    .carousel {
+      .carousel-indicators [data-bs-target] {
+        height: 8px;
+        width: 8px;
+      }
+      .carousel-control-next,
+      .carousel-control-prev {
+        width: 5%;
+      }
+      .carousel-caption {
+        width: 50%;
+        line-height: 30px;
+        top: 25%;
+        transform: translateY(-25%);
+
+        p {
+          font-weight: 300;
+          font-size: 1rem;
+        }
+        h1 {
+          font-size: 2rem;
+          padding-bottom: 10px;
+        }
+      }
+      .view-more {
+        padding: 8px 16px;
+      }
+    }
+    //features
+    .features {
+      h4 {
+        padding-top: 20px;
+        text-align: center;
+      }
+    }
+  }
+}
+
+// small screens
+
+@media screen and (min-width: 0px) and (max-width: $breakpoint-md) {
+  .Home {
+    // carousel
+    .carousel {
+      .carousel-indicators [data-bs-target] {
+        height: 8px;
+        width: 8px;
+      }
+    }
+    // features
+    .features {
+      img {
+        margin-bottom: 40px;
+      }
+      h4 {
+        text-align: center;
+      }
+    }
+  }
+}
